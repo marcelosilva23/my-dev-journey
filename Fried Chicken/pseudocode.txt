@@ -1,0 +1,63 @@
+Bird
+Variables:
+private picture bird;
+private Boolean isJumping;
+private int speed;
+private int gravity;
+
+public Bird(int X, int Y, int width, int height, String URL){
+
+	bird = new picture(X,Y,width,height,URl);
+
+}
+
+// each frame, game will remove 1 from jump
+public void keyPressed(Key){
+ 	if(gamestate == playing){
+		if(key == up){
+			gravity == 50}
+	}
+
+// move is called every frame
+	public void move(){
+			y += gravity;
+		if gravity < -50
+			gravity--;
+	}
+
+// when we restart player goes to original position
+public void resetPosition(){
+	posX = Xoriginal
+	posY = Yoriginal
+}
+
+
+Pipes:
+Variables:
+private picture pipeTop = X,Y,Width,Height,URL;
+private picture pipeDown = X,Y,Width,Height,URL;
+private rectangle gap = X,Y,Width,Height;
+
+public void move(){
+	X--;
+}
+
+
+ColisionHandler:
+Variables:
+
+public static bool isColiding(Player, Object){
+
+// colisio boundaries
+
+	p1: top left - playerX, playerY (default)
+	p2: top right - PlayerX + width, playerY
+	p3: bottom left - playerX, playerY + height
+	p4: bottomright - playerX + width, playerY + height
+
+}
+
+
+
+
+
