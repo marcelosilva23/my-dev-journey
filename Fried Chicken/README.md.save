@@ -1,0 +1,22 @@
+# 🍗 Fried Chicken
+
+**Fried Chicken** is a group project developed in Java — a fun, Flappy Bird-style game where the player controls a chicken dodging obstacles.
+
+> 🚧 This project is still under development. Features and refinements are being added continuously.
+
+## 🕹️ Gameplay Overview
+- Press a key to make the chicken flap and stay airborne
+- Avoid obstacles to keep the game going
+- Simple 2D graphics and physics simulation
+
+## 👥 Team Project
+This game was developed as a team effort during our programming studies, focusing on collaboration, game logic, and object-oriented programming.
+
+## 🛠️ Built With
+- Java
+- Java Swing
+- OOP principles
+- Basic game loop mechanics
+
+## 🎯 Objective
+The goal of the project was to apply programming fundamentals in a creative and collaborative way while building an interactive game from scratch.
