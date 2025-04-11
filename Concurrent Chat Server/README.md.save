@@ -1,0 +1,30 @@
+# 💬 Concurrent Chat Server
+
+A multithreaded chat server built in Java, allowing multiple clients to connect and communicate in real time.
+
+> ⚠️ This project is currently a work in progress. Further enhancements and features are being implemented.
+
+## 🧠 Key Concepts
+- Java Socket Programming
+- Multithreading
+- Server/Client architecture
+- Real-time message broadcasting
+
+## 🚧 In Progress
+- Improved user interface for clients
+- User authentication system (planned)
+- Private messaging (planned)
+- Message history logging (planned)
+
+## 🛠️ Technologies Used
+- Java
+- Java Sockets
+- Threads
+
+## 🎯 Objective
+To practice Java networking and multithreading concepts by simulating a real-time, multi-user communication platform.
+
+---
+
+More updates coming soon!
+
