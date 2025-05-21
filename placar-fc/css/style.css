@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 1rem;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#matches {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.match-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.match-card .teams {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.status {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
