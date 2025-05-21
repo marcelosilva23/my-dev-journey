@@ -19,6 +19,8 @@ export function renderMatches(matches) {
         </div>
       </div>
       <div class="status">${translateStatus(match.status)} - ${formatTime(match.time)}</div>
+        <button class="lineup-btn" data-id="${match.id}">Ver escalação</button>
+        <div class="lineup" id="lineup-${match.id}" style="display: none;"></div>
     `;
 
     container.appendChild(card);
@@ -49,4 +51,21 @@ function formatTime(dateStr) {
         hour: "2-digit",
         minute: "2-digit",
     });
+}
+
+export function renderLineup(container, data) {
+    if (!data || data.length === 0) {
+        container.innerHTML = "<p> Unavailable lineups</p>";
+        return;
+    }
+
+    container.innerHTML = data.map (team => `
+    <h3>${team.team.name} (${team.formation})</h3>
+    <p><strong>Técnico:</strong> ${team.coach.name}</p>
+    <ul>
+      ${team.startXI.map(player => `
+        <li>#${player.player.number} - ${player.player.name} (${player.player.pos})</li>
+      `).join("")}
+    </ul>
+  `).join("<hr />");
 }

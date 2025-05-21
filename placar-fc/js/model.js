@@ -35,3 +35,24 @@ export async function getTodayMatches() {
         throw err;
     }
 }
+
+export async function getLineup(fixtureId) {
+    const url = `https://api-football-v1.p.rapidapi.com/v3/fixtures/lineups?fixture=${fixtureId}`;
+
+    const options = {
+        method: "GET",
+        headers: {
+            "x-rapidapi-key": API_KEY,
+            "x-rapidapi-host": API_HOST, 
+        },
+    };
+
+    try {
+        const response = await fetch (url, options);
+        const data = await response.json();
+        return data.response;
+    } catch (err) {
+        console.log ("LineUp not found", err);
+        return null;
+    }
+}
